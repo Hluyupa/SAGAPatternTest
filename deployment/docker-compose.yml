@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  postgres_some_service:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: develop
+      POSTGRES_PASSWORD: develop
+      POSTGRES_DB: some-service-db
+    ports:
+      - "5434:5432"
+        
+  postgres_another_service:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: develop
+      POSTGRES_PASSWORD: develop
+      POSTGRES_DB: another-service-db
+    ports:
+      - "5433:5432"
